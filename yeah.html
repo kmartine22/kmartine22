@@ -16,9 +16,19 @@
 
 <p>This is our hidden button on our page.</p>
 
-<p id="demo" style="display:none">Team 5 is awesome!</p>
+<p id="demo" style="display:none">Team 5 is awesome! We have been working extremely well together during this class!</p>
 
 <button type="button" onclick="document.getElementById('demo').style.display='block'">Click to see the text!</button>
+
+<script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits;
+    
+    function myFunction() {
+      fruits.push("Lemon");
+      document.getElementById("demo").innerHTML = fruits;
+    }
+    </script>
 
 </body>
 </html>
