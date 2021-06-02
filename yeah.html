@@ -20,15 +20,18 @@
 
 <button type="button" onclick="document.getElementById('demo').style.display='block'">Click to see the text!</button>
 
+<p id="array"></p>
+
 <script>
-    var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.getElementById("demo").innerHTML = fruits;
+    var names = ["Selena", "Alex", "Nathan", "Katia"];
+    document.getElementById("array").innerHTML = names;
     
     function myFunction() {
-      fruits.push("Lemon");
-      document.getElementById("demo").innerHTML = fruits;
+      names.push("Team 5 members");
+      document.getElementById("array").innerHTML = names;
     }
     </script>
+
 
 </body>
 </html>
