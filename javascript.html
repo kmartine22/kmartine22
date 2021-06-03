@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Selena added CSS Styles-->
+  <style type="text/css">
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    svg:not(:root) {
+      display: block;
+    }
+
+    .playable-code {
+      background-color: #f4f7f8;
+      border: none;
+      border-left: 6px solid #558abb;
+      border-width: medium medium medium 6px;
+      height: 100px;
+      width: 90%;
+      padding: 10px 10px 0;
+    }
+
+    .playable-canvas {
+      border: 1px solid #4d4e53;
+      border-radius: 2px;
+    }
+
+    .playable-buttons {
+      text-align: right;
+      width: 90%;
+      padding: 5px 10px 5px 26px;
+    }
+
+    .headerbar {
+      background-color: #4d4e53;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      overflow: hidden;
+    }
+  </style>
+  <!-- Selena added CSS Styles-->
+  <!-- Selena added a title-->
+  <title>Team 5 Javascript page</title>
+</head>
+<!-- Every team member contributed to making of the buttons-->
+
+<body>
+  <header class="headerbar">
+    <h1>This is our Java Script site</h1>
+  </header>
+  <!--Selena fixed the button's text so it appears after the button-->
+  <!--Note to Selena, change the style of each button-->
+  <p>This is our hidden button on our page.</p>
+  <button type="button" onclick="document.getElementById('demo').style.display='block'">Click to see the text!</button>
+  <p id="demo" style="display:none">Team 5 is awesome! We have been working extremely well together during this class!
+  </p>
+
+  <button onclick="myFunction()">Click the button to reveal the fourth member!</button>
+  <p id="array"></p>
+  <script>
+    var names = ["Alex", "Nathan", "Katia"];
+    document.getElementById("array").innerHTML = names;
+
+    function myFunction() {
+      names.push("and Selena!");
+      document.getElementById("array").innerHTML = names;
+    }
+  </script>
+
+
+  <p><label for="names">Select a groupmate's name to see what they have to say: </label>
+    <select id="names">
+      <option value="">--Make a choice--</option>
+      <option value="Alex">Alex</option>
+      <option value="Selena">Selena</option>
+      <option value="Nathan">Nathan</option>
+      <option value="Katia">Katia</option>
+    </select>
+  </p>
+  <p id="choice"></p>
+<!--Selena also changed querySelector to getElementById so that it would recognize the id 'choice'-->
+  <script>
+    const select = document.getElementById('names');
+    const para = document.getElementById('choice');
+
+    select.addEventListener('change', setNames);
+
+    function setNames() {
+      const choice = select.value;
+
+      if (choice === 'Alex') {
+        para.textContent = 'This is my first time coding in JS, it kinda sucks .';
+      } else if (choice === 'Selena') {
+        para.textContent = 'Im trying my best out here .';
+      } else if (choice === 'Nathan') {
+        para.textContent = 'I think coding is dandy.';
+      } else if (choice === 'Katia') {
+        para.textContent = 'I love playing videos games specificially Overwatch and Apex Legends, I main Mercy on Overwatch and Wraith on Apex :) .';
+      } else {
+        para.textContent = '';
+      }
+    }
+
+
+  </script>
+  <!-- Every team member contributed to making of the buttons-->
+</body>
+
+</html>
