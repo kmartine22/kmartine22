@@ -6,14 +6,13 @@ body {
 
 #wrapper {
     background-color: #FDFDFD;
-    background-image: url("https://library.kissclipart.com/20180915/hae/kissclipart-earth-science-clipart-plastic-09738-ocean-ed6b8625090ac21c.png");
     width:  100%;
     height: 1000px;
     margin: 0 auto;
     }
     
 header {
-    background-color: #FDB532;
+    background-color: #fd32c0;
     color: #FFF;
     text-align: center;
     height: 150px;
