@@ -1,5 +1,5 @@
 body {
-    background-color: #054b7a;
+    background-color: #000000;
     color: #080808;
     font-family: Verdana, Arial, sans-serif;
 }
@@ -12,7 +12,7 @@ body {
     }
     
 header {
-    background-color: #fd32c0;
+    background-color: #000000;
     color: #FFF;
     text-align: center;
     height: 150px;
