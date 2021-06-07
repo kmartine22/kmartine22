@@ -29,10 +29,14 @@
       display: block;
     }
 
-     .hiddenmember {
-
+    .hiddenmember {
+      margin: 1%;
+      background-color: rgb(180, 184, 245);
+      border: 2px solid black;
     }
-
+    .secretmessage {
+      margin: 1%
+    }
     .playable-code {
       background-color: #f4f7f8;
       border: none;
@@ -65,10 +69,9 @@
       color: white;
     }
 
-    h2{
+    h2 {
       color: brown;
     }
-
   </style>
   <!-- Selena added CSS Styles-->
   <!-- Selena added a title-->
@@ -83,11 +86,11 @@
   <!--Selena fixed the button's text so it appears after the button-->
   <!--Note to Selena, change the style of each button-->
   <p>This is our hidden button on our page.</p>
-  <button type="button" onclick="document.getElementById('demo').style.display='block'">Click to see the text!</button>
+  <button class="secretmessage" type="button" onclick="document.getElementById('demo').style.display='block'">Click to see the text!</button>
   <p id="demo" style="display:none">Team 5 is awesome! We have been working extremely well together during this class!
   </p>
 
-  <button onclick="myFunction()">Click the button to reveal the fourth member!</button>
+  <div><button class="hiddenmember" onclick="myFunction()">Click the button to reveal the fourth member!</button></div>
   <p id="array"></p>
   <script>
     var names = ["Alex", "Nathan", "Katia"];
@@ -99,19 +102,19 @@
     }
   </script>
 
-<h2>These are the ages of our teammates</h2>
+  <h2>These are the ages of our teammates</h2>
 
-<p id="ages"></p>
+  <p id="ages"></p>
 
-<script>
-var ages = ["18", "21", "20", "18"];
-var text = "";
-var i;
-for (i = 0; i < ages.length; i++) {
-  text += ages[i] + "<br>";
-}
-document.getElementById("ages").innerHTML = text;
-</script>
+  <script>
+    var ages = ["18 (Alex)", "21 (Nathan)", "20 (Katia)", "18 (Selena)"];
+    var text = "";
+    var i;
+    for (i = 0; i < ages.length; i++) {
+      text += ages[i] + "<br>";
+    }
+    document.getElementById("ages").innerHTML = text;
+  </script>
 
 
   <p><label for="names">Select a groupmate's name to see what they have to say: </label>
@@ -124,7 +127,7 @@ document.getElementById("ages").innerHTML = text;
     </select>
   </p>
   <p id="choice"></p>
-<!--Selena also changed querySelector to getElementById so that it would recognize the id 'choice'-->
+  <!--Selena also changed querySelector to getElementById so that it would recognize the id 'choice'-->
   <script>
     const select = document.getElementById('names');
     const para = document.getElementById('choice');
