@@ -88,6 +88,20 @@
     }
   </script>
 
+<p id="ages"></p>
+
+<h2>These are the ages of our teammates</h2>
+
+<script>
+var ages = ["18", "21", "20", "18"];
+var text = "";
+var i;
+for (i = 0; i < ages.length; i++) {
+  text += ages[i] + "<br>";
+}
+document.getElementById("ages").innerHTML = text;
+</script>
+
 
   <p><label for="names">Select a groupmate's name to see what they have to say: </label>
     <select id="names">
