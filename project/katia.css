@@ -1,13 +1,13 @@
 body {
-    background-color: #000000;
+    background-color:gray;
     color: #080808;
     font-family: Verdana, Arial, sans-serif;
 }
 
 #wrapper {
-    background-color: #FDFDFD;
+    background-color: #ffffff;
     width:  80%;
-    height: 1000px;
+    height: 2000px;
     margin: 0 auto;
     }
     
@@ -62,14 +62,10 @@ a {
 h2 {
     color: #383631;
     }
-    
-span.coffeehouse {
-    font-style: italic;
-    }
 
 
 footer {
-    background-color: #000000;
+    background-color: white;
     font-style: italic;
     text-align: center;
     color: #FFF;
