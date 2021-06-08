@@ -72,4 +72,20 @@ footer {
     padding: 5px;
     margin-top: 20px;
     } 
-   
+    body, html {
+        height: 100%;
+        margin: 0;
+      }
+      
+      .bg {
+        /* The image used */
+        background-image: url("https://www.coachseansmith.com/wp-content/uploads/blue-ocean-background-2.jpg");
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
