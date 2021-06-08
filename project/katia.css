@@ -1,13 +1,13 @@
 body {
-    background-color:gray;
-    color: #080808;
+    background-color: black;
+
     font-family: Verdana, Arial, sans-serif;
 }
 
 #wrapper {
     background-color: #ffffff;
     width:  80%;
-    height: 2000px;
+    height: 1500px;
     margin: 0 auto;
     }
     
